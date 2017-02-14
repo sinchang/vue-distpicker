@@ -1,4 +1,4 @@
-## vue-laypage
+## vue-distpicker
 
 > A simple Vue component for picking provinces, cities and districts of China.
 
