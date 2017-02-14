@@ -1,6 +1,7 @@
 ## vue-laypage
 
 > A simple Vue component for picking provinces, cities and districts of China.
+
 ## Installation and Use
 
 ```
@@ -8,10 +9,10 @@ $ npm install vue-distpicker --save
 ```
 
 ```
-import Laypage from 'vue-laypage';
+import Distpicker from 'vue-distpicker';
 export default {
   components: {
-    Laypage
+    Distpicker
   }
 }
 ```
@@ -20,8 +21,8 @@ or
 
 ```
 import Vue from 'vue';
-import Laypage from 'vue-laypage';
-Vue.component('Laypage', Laypage);
+import Distpicker from 'vue-distpicker';
+Vue.component('Distpicker', Distpicker);
 ```
 ## Props
 | Name | Type | Description |
