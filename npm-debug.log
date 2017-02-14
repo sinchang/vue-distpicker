@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/lib/node_modules/cnpm/node_modules/.bin/npm',
+1 verbose cli   '--userconfig=/Users/sinchang/.cnpmrc',
+1 verbose cli   '--disturl=https://npm.taobao.org/mirrors/node',
+1 verbose cli   '--registry=https://registry.npm.taobao.org',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.5
+3 info using node@v7.2.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/sinchang/Desktop/vue-distpicker',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/sinchang/.npm/vue-distpicker/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/sinchang/.npm correctMkdir not in flight; initializing
+10 info lifecycle vue-distpicker@1.0.0~prepublish: vue-distpicker@1.0.0
+11 silly lifecycle vue-distpicker@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/sinchang/.npm/vue-distpicker/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/sinchang/Desktop/vue-distpicker' ]
+13 verbose tarball /Users/sinchang/.npm/vue-distpicker/1.0.0/package.tgz
+14 verbose folder /Users/sinchang/Desktop/vue-distpicker
+15 verbose addLocalTarball adding from inside cache /Users/sinchang/.npm/vue-distpicker/1.0.0/package.tgz
+16 verbose correctMkdir /Users/sinchang/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd vue-distpicker@1.0.0
+18 verbose afterAdd /Users/sinchang/.npm/vue-distpicker/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/sinchang/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/sinchang/.npm/vue-distpicker/1.0.0/package/package.json written
+21 silly publish { name: 'vue-distpicker',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'A simple Vue component for picking provinces, cities and districts of China.',
+21 silly publish   main: 'dist/vueDistpicker.js',
+21 silly publish   scripts:
+21 silly publish    { dev: 'cross-env NODE_ENV=development webpack --progress --hide-modules',
+21 silly publish      watch: 'cross-env NODE_ENV=development webpack --watch --progress --hide-modules',
+21 silly publish      hmr: 'cross-env NODE_ENV=development webpack-dev-server --inline --hot',
+21 silly publish      production: 'cross-env NODE_ENV=production webpack --progress --hide-modules' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/sinchang/vue-distpicker.git' },
+21 silly publish   bugs: { url: 'https://github.com/sinchang/vue-distpicker/issues' },
+21 silly publish   keywords: [ 'vue', 'distpciker', 'china' ],
+21 silly publish   author: { name: 'sinchang', email: 'sinchangwen@gmail.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   devDependencies: { 'laravel-mix': '^0.7.2', vue: '^2.1.10' },
+21 silly publish   dependencies: {},
+21 silly publish   readme: '## vue-laypage\n\n> A simple Vue component for picking provinces, cities and districts of China.\n## Installation and Use\n\n```\n$ npm install vue-distpicker --save\n```\n\n```\nimport Laypage from \'vue-laypage\';\nexport default {\n  components: {\n    Laypage\n  }\n}\n```\n\nor\n\n```\nimport Vue from \'vue\';\nimport Laypage from \'vue-laypage\';\nVue.component(\'Laypage\', Laypage);\n```\n## Props\n| Name | Type | Description |\n| --- | --- | --- |\n| ids | Array | 默认省市区的 id, 长度必须为 3 |\n| prov | String | 省份选择框 name 值 |\n| city | String | 城市选择框 name 值 |\n| dist | String | 地区限制框 name 值 |\n\n\n## LICENSE\n\nMIT\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   homepage: 'https://github.com/sinchang/vue-distpicker#readme',
+21 silly publish   _id: 'vue-distpicker@1.0.0',
+21 silly publish   _shasum: '3919c13e4d527288b66113ca1de50f98a8d6f0ba',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name vue-distpicker
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npm.taobao.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'vue-distpicker',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'vue-distpicker',
+26 silly mapToRegistry   name: 'vue-distpicker',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npm.taobao.org/vue-distpicker
+28 verbose publish registryBase https://registry.npm.taobao.org/
+29 silly publish uploading /Users/sinchang/.npm/vue-distpicker/1.0.0/package.tgz
+30 verbose stack Error: auth required for publishing
+30 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/cnpm/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+30 verbose stack     at /usr/local/lib/node_modules/cnpm/node_modules/npm/lib/publish.js:138:14
+30 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/cnpm/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+30 verbose stack     at publish_ (/usr/local/lib/node_modules/cnpm/node_modules/npm/lib/publish.js:107:3)
+30 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/cnpm/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+30 verbose stack     at LOOP (/usr/local/lib/node_modules/cnpm/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+30 verbose stack     at LOOP (/usr/local/lib/node_modules/cnpm/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+30 verbose stack     at chain (/usr/local/lib/node_modules/cnpm/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+30 verbose stack     at /usr/local/lib/node_modules/cnpm/node_modules/npm/lib/publish.js:73:5
+30 verbose stack     at RES (/usr/local/lib/node_modules/cnpm/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+31 verbose cwd /Users/sinchang/Desktop/vue-distpicker
+32 error Darwin 16.4.0
+33 error argv "/usr/local/bin/node" "/usr/local/lib/node_modules/cnpm/node_modules/.bin/npm" "--userconfig=/Users/sinchang/.cnpmrc" "--disturl=https://npm.taobao.org/mirrors/node" "--registry=https://registry.npm.taobao.org" "publish"
+34 error node v7.2.0
+35 error npm  v3.10.5
+36 error code ENEEDAUTH
+37 error need auth auth required for publishing
+38 error need auth You need to authorize this machine using `npm adduser`
+39 verbose exit [ 1, true ]
