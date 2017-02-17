@@ -4,7 +4,7 @@
     </select>
     <select :name="city" ref="city" @change="changeCity" v-model="cityId">
     </select>
-    <select :name="dist" ref="dist" v-model="distId" @change="changeDist">
+    <select :name="dist" ref="dist" v-model="distId">
     </select>
   </div>
 </template>
@@ -36,9 +36,6 @@
       },
       ids: {
         type: Array
-      },
-      onchange: {
-        type: Function
       }
 
     },
@@ -68,9 +65,6 @@
         this.$refs.dist.innerHTML = '<option value="">请选择地区</option>' + tpl;
         this.distId = '';
       },
-      handleEmit() {
-        this.$emit('onchange', this.provId, this.cityId, this.distId);
-      },
       getOptionData(data) {
         let tpl = '';
         if (data) {
@@ -93,7 +87,6 @@
         }
         let cityData = areaData[id];
         this.cityReset(this.getOptionData(cityData));
-        this.handleEmit();
       },
       changeCity() {
         let id = this.cityId;
@@ -104,10 +97,6 @@
         let distData = areaData[id];
         if (!distData) return;
         this.distReset(this.getOptionData(distData));
-        this.handleEmit();
-      },
-      changeDist() {
-        this.handleEmit();
       }
     }
   }
