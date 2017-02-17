@@ -1,7 +1,7 @@
 <template>
   <div>
     <distpicker :prov="prov" :ids="val"></distpicker>
-    <distpicker></distpicker>
+    <distpicker @onchange="cb"></distpicker>
   </div>
 </template>
 
@@ -20,7 +20,9 @@
       Distpicker
     },
     methods: {
-
+      cb(a, b, c) {
+        console.log(a, b, c);
+      }
     }
   }
 </script>
