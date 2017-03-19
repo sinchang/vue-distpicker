@@ -27,7 +27,7 @@ Vue.component('Distpicker', Distpicker);
 ## Props
 | Name | Type | Description |
 | --- | --- | --- |
-| ids | Array | 默认省市区的 id, 长度必须为 3 |
+| ids | Array | 默认省市区的 id |
 | onchange | Function | 回调， 三个参数分别为省市区的 id |
 | prov | String | 省份选择框 name 值 |
 | city | String | 城市选择框 name 值 |

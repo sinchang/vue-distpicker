@@ -47,9 +47,9 @@
       if (this.ids) {
         this.provId = this.ids[0];
         this.changeProv();
-        this.cityId = this.ids[1];
+        this.cityId = this.ids[1] || '';
         this.changeCity();
-        this.distId = this.ids[2];
+        this.distId = this.ids[2] || '';
         return;
       }
       this.cityReset();
@@ -102,7 +102,9 @@
           return;
         }
         let distData = areaData[id];
-        if (!distData) return;
+        if (!distData) {
+          this.distReset();
+        };
         this.distReset(this.getOptionData(distData));
         this.handleEmit();
       },

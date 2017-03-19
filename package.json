@@ -1,6 +1,6 @@
 {
   "name": "vue-distpicker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple Vue component for picking provinces, cities and districts of China.",
   "main": "dist/vueDistpicker.js",
   "scripts": {
