@@ -13,7 +13,8 @@
   "scripts": {
     "prepublishOnly": "npm test && npm run build",
     "lint": "eslint .",
-    "test": "tyu -- --coverage",
+    "test": "tyu",
+    "test:cov": "tyu -- --coverage",
     "test:watch": "tyu -- --watch",
     "build": "bili",
     "example": "poi",
