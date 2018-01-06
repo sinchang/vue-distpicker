@@ -1,6 +1,6 @@
 # vue-distpicker
 
-[![NPM version](https://img.shields.io/npm/v/vue-distpicker.svg?style=flat)](https://npmjs.com/package/vue-distpicker) [![NPM downloads](https://img.shields.io/npm/dm/vue-distpicker.svg?style=flat)](https://npmjs.com/package/vue-distpicker) [![CircleCI](https://circleci.com/gh/sinchang/vue-distpicker/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/vue-distpicker/tree/master)
+[![NPM version](https://img.shields.io/npm/v/vue-distpicker.svg?style=flat)](https://npmjs.com/package/vue-distpicker) [![NPM downloads](https://img.shields.io/npm/dm/vue-distpicker.svg?style=flat)](https://npmjs.com/package/vue-distpicker) [![CircleCI](https://circleci.com/gh/sinchang/vue-distpicker/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/vue-distpicker/tree/master)[![codecov](https://codecov.io/gh/sinchang/vue-distpicker/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/vue-distpicker)
 
 A simple Vue component for picking provinces, cities and districts of China.
 
