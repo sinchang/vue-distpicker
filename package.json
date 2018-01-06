@@ -1,31 +1,62 @@
 {
   "name": "vue-distpicker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple Vue component for picking provinces, cities and districts of China.",
-  "main": "dist/vueDistpicker.js",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
-    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
-  },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sinchang/vue-distpicker.git"
+    "url": "sinchang/vue-distpicker",
+    "type": "git"
   },
-  "bugs": {
-    "url": "https://github.com/sinchang/vue-distpicker/issues"
-  },
-  "keywords": [
-    "vue",
-    "distpciker",
-    "china"
+  "main": "dist/vue-distpicker.cjs.js",
+  "files": [
+    "dist"
   ],
-  "author": "sinchang <sinchangwen@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "laravel-mix": "^0.7.2",
-    "vue": "^2.1.10"
+  "scripts": {
+    "prepublishOnly": "npm test && npm run build",
+    "lint": "eslint .",
+    "test": "tyu -- --coverage",
+    "test:watch": "tyu -- --watch",
+    "build": "bili",
+    "example": "poi",
+    "build:example": "poi build"
   },
-  "dependencies": {}
+  "author": {
+    "name": "sinchang",
+    "email": "sinchangwen@gmail.com"
+  },
+  "license": "MIT",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "./"
+  },
+  "bili": {
+    "format": [
+      "cjs",
+      "umd"
+    ],
+    "name": "vue-distpicker",
+    "plugins": [
+      "vue"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ]
+  },
+  "eslintIgnore": [
+    "*.test.js",
+    "dist",
+    "coverage"
+  ],
+  "devDependencies": {
+    "bili": "^1.3.3",
+    "eslint": "^4.14.0",
+    "eslint-plugin-vue": "^4.0.1",
+    "poi": "^9.3.10",
+    "rollup-plugin-vue": "^2.5.2",
+    "tyu": "^1.0.0",
+    "vue-test-utils": "^1.0.0-beta.9"
+  }
 }

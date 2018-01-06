@@ -1,3 +1,11 @@
-import Distpicker from './Distpicker.vue';
+import Distpicker from './Distpicker.vue'
 
-export default Distpicker;
+Distpicker.install = Vue => {
+  Vue.component('distpicker', Distpicker)
+}
+
+if (typeof window !== 'undefined' && window.vue) {
+  window.Distpicker = Distpicker
+}
+
+export default Distpicker
